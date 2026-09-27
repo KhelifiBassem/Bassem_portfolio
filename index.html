@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>معرض الأعمال</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15131f;
+    --surface:#1d1a2b;
+    --text:#f1eef7;
+    --muted:#9a94b3;
+    --accent:#e6a94f;
+    --line:#302c45;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:inherit;margin:0;padding:0;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Cairo', system-ui, sans-serif;
+    min-height:100%;
+    line-height:1.7;
+  }
+  h1,h2,h3{font-family:'Tajawal', system-ui, sans-serif;}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{padding:88px 0 56px;}
+  .eyebrow{color:var(--accent);font-size:15px;margin-bottom:14px;}
+  h1{font-size:clamp(32px,7vw,52px);font-weight:900;line-height:1.2;margin-bottom:18px;}
+  header p{color:var(--muted);font-size:18px;max-width:520px;}
+
+  main{padding-bottom:60px;}
+  .category{
+    border-top:1px solid var(--line);
+    padding:36px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .category:last-child{border-bottom:1px solid var(--line);}
+  .cat-info h2{font-size:26px;margin-bottom:8px;}
+  .cat-info p{color:var(--muted);font-size:15px;}
+  .cat-go{
+    flex-shrink:0;
+    width:46px;height:46px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;
+    color:var(--accent);
+    transition:background .2s, border-color .2s;
+  }
+  .category:hover .cat-go{background:var(--surface);border-color:var(--accent);}
+
+  footer{
+    padding:40px 0 60px;
+    color:var(--muted);
+    font-size:14px;
+    border-top:1px solid var(--line);
+  }
+
+  @media (max-width:520px){
+    header{padding:56px 0 40px;}
+    .category{padding:26px 0;}
+    .cat-info h2{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">معرض أعمال</div>
+      <h1>اسمك هنا</h1>
+      <p>مجموعة مختارة من أعمالي في تصميم الويب، الفيديوهات المولّدة بالذكاء الاصطناعي، والبوسترات. كل قسم يفتح فولدر منفصل على درايف.</p>
+    </header>
+
+    <main>
+      <a class="category" href="PASTE_WEB_LINK_HERE" target="_blank" rel="noopener">
+        <div class="cat-info">
+          <h2>تصميم الويب</h2>
+          <p>واجهات ومواقع تم تصميمها وتطويرها</p>
+        </div>
+        <div class="cat-go">↗</div>
+      </a>
+
+      <a class="category" href="PASTE_AI_VIDEO_LINK_HERE" target="_blank" rel="noopener">
+        <div class="cat-info">
+          <h2>فيديوهات AI</h2>
+          <p>محتوى مرئي مولّد باستخدام أدوات الذكاء الاصطناعي</p>
+        </div>
+        <div class="cat-go">↗</div>
+      </a>
+
+      <a class="category" href="PASTE_POSTER_LINK_HERE" target="_blank" rel="noopener">
+        <div class="cat-info">
+          <h2>تصميم البوسترات</h2>
+          <p>أعمال جرافيك وبوسترات لمشاريع وعملاء مختلفين</p>
+        </div>
+        <div class="cat-go">↗</div>
+      </a>
+    </main>
+
+    <footer>
+      للتواصل: بريدك الإلكتروني أو رقم هاتفك هنا
+    </footer>
+  </div>
+</body>
+</html>
